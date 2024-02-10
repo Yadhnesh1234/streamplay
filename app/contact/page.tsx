@@ -1,6 +1,7 @@
 import React from "react";
 import { Outfit } from "next/font/google";
-import Image from "next/image";
+import { FaFacebook, FaTwitter, FaInstagram,FaGithub  } from 'react-icons/fa'
+
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -11,11 +12,13 @@ const AboutPage = () => {
         <div className="font-inter container flex h-screen max-w-screen-2xl items-center justify-center py-14">
           <div className="md:w-1/2">
             <h1 className="my-2 text-5xl leading-relaxed text-gray-200">
-              <span className="text-sky-300 hover:text-cyan-300">Contact Us</span>{" "}
+              <span className="text-sky-300 hover:text-cyan-300">
+                Contact Us
+              </span>{" "}
             </h1>
-           <div>
-           <form>
-                <div className="-mx-4 flex flex-wrap mt-20">
+            <div>
+              <form>
+                <div className="-mx-4 mt-20 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
@@ -27,7 +30,7 @@ const AboutPage = () => {
                       <input
                         type="text"
                         placeholder="Enter your organisation name"
-                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none bg-transparent focus:border-primary focus:shadow-none"
+                        className="w-full rounded-lg border border-stroke bg-transparent px-6  py-3 text-base text-body-color-dark  shadow-two outline-none focus:border-primary focus:shadow-none"
                       />
                     </div>
                   </div>
@@ -42,7 +45,7 @@ const AboutPage = () => {
                       <input
                         type="email"
                         placeholder="Enter your email"
-                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none bg-transparent focus:border-primary focus:shadow-none"
+                        className="w-full rounded-lg border border-stroke bg-transparent px-6  py-3 text-base text-body-color-dark  shadow-two outline-none focus:border-primary focus:shadow-none"
                       />
                     </div>
                   </div>
@@ -50,7 +53,7 @@ const AboutPage = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="message"
-                        className="mb-3 block text-sm font-mediumtext-white"
+                        className="font-mediumtext-white mb-3 block text-sm"
                       >
                         Organisation Description
                       </label>
@@ -58,18 +61,31 @@ const AboutPage = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter Description"
-                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none bg-transparent focus:border-primary focus:shadow-none"
+                        className="w-full rounded-lg border border-stroke bg-transparent px-6  py-3 text-base text-body-color-dark  shadow-two outline-none focus:border-primary focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className=" shadow-submit-dark rounded-lg bg-primary px-6 py-2 text-base font-medium text-white duration-300 hover:bg-primary/90">
+                    <button className=" rounded-lg bg-sky-500 px-6 py-2 text-base font-medium text-white shadow-submit-dark duration-300 hover:bg-sky-400">
                       Submit
                     </button>
                   </div>
                 </div>
               </form>
-           </div>
+              <div className="flex items-center justify-center mt-4">
+                <span className="w-1/3 border-b border-gray-300"></span>
+                <span className="mx-4 text-gray-500">
+                  Or, connect with us with
+                </span>
+                <span className="w-1/3 border-b border-gray-300"></span>
+              </div>
+              <div className="flex items-center justify-center mt-4">
+                 <FaFacebook className="mx-2 text-blue-500 w-8 h-8 hover:h-10 hover:w-10" />
+                 <FaTwitter className="mx-2 text-blue-500 w-8 h-8 hover:h-10 hover:w-10" />
+                 <FaInstagram className="mx-2 text-blue-500 w-8 h-8 hover:h-10 hover:w-10" />
+                 <FaGithub className="mx-2 text-blue-500 w-8 h-8 hover:h-10 hover:w-10" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
