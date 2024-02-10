@@ -1,4 +1,6 @@
+
 const  TournamentRegis = () => {
+
     return(
         <>
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
@@ -6,11 +8,11 @@ const  TournamentRegis = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="wow fadeInUp shadow-three dark:bg-gray-dark mb-12 rounded-lg bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp shadow-three bg-gray-dark mb-12 rounded-lg  px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-3 text-2xl font-bold  text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Host Tournament
               </h2>
               <form>
@@ -19,7 +21,7 @@ const  TournamentRegis = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                         Tournament Name
                       </label>
@@ -28,7 +30,7 @@ const  TournamentRegis = () => {
                         name="name"
                         id="name"
                         placeholder="Enter your Tournament name"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                       />
                     </div>
                   </div>
@@ -36,14 +38,14 @@ const  TournamentRegis = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="games"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                        Select Game
                       </label>
                       <select 
                         name="games"
                         id="games"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                      >
                       <option value={null}>Select Game</option>
                       <option value="1">PUBG</option>
@@ -57,7 +59,7 @@ const  TournamentRegis = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="poster"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                       Tournament Poster
                       </label>
@@ -74,15 +76,16 @@ const  TournamentRegis = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="description"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                        Tournament Description
                       </label>
                       <textarea
                         name="description"
+                        id="description"
                         rows={5}
                         placeholder="Enter Tornament Description"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
@@ -90,12 +93,13 @@ const  TournamentRegis = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="rules"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                        Tournament Rules
                       </label>
                       <textarea
                         name="rules"
+                        id="rules"
                         rows={5}
                         placeholder="Enter Tornament Rules"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -105,32 +109,32 @@ const  TournamentRegis = () => {
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
-                        htmlFor="start-date"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        htmlFor="start_date"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                        Select Start Date and Time
                       </label>
                       <input
                         type="datetime-local"
-                        name="start-date"
-                        id="start-date"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        name="start_date"
+                        id="start_date"
+                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                      />
                     </div>
                   </div>
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
-                        htmlFor="end-date"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        htmlFor="end_date"
+                        className="mb-3 block text-sm font-medium text-white"
                       >
                        Select End Date and Time
                       </label>
                       <input
                         type="datetime-local"
-                        name="end-date"
-                        id="end-date"
-                        className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-lg border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+                        name="end_date"
+                        id="end_date"
+                        className="border-stroke text-body-color-dark shadow-two w-full rounded-lg border  px-6 py-3 text-base  outline-none  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                      />
                     </div>
                   </div>
