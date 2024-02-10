@@ -310,6 +310,25 @@ const BlogSidebarPage = () => {
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     mattis vulputate cupidatat.
                   </p>
+                <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                  Announcements
+                </h3>
+                <ul className="px-8 py-6">
+                <li className="flex justify-between">
+                     <h1 className="text-2x" style={{fontWeight:"bold"}}>Register</h1>
+                     <button className="shadow-submit dark:shadow-submit-dark rounded-lg bg-primary px-4 py-2 text-base font-medium text-white duration-300 hover:bg-primary/90">
+                      Registration
+                    </button>
+                  </li>
+                  <li className="flex justify-between mt-12">
+                     <h1 className="text-2x" style={{fontWeight:"bold"}}>Match Schedule</h1>
+                     <button className="shadow-submit dark:shadow-submit-dark rounded-lg bg-primary px-4 py-2 text-base font-medium text-white duration-300 hover:bg-primary/90">
+                      View Schedule
+                    </button>
+                  </li>
+                </ul>
+              </div>
                   <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
                       <h4 className="mb-3 text-sm font-medium text-body-color">
